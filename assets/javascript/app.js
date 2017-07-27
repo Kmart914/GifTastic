@@ -1,9 +1,10 @@
 $( document ).ready(function() {
 
   var topics = ["amg", "bmw", "gt350", "mclaren", "lamborghini", "ferrari", "koenigsegg", "bugatti"]
+  var type = $(this).attr("data-name");
 
 
-  function displayGifs(){
+function displayGifs(){
   var apiKey = "&api_key=a97091ac30ef41c28c305c9660213a24&limit=10"
   var type = $(this).attr("data-name");
   var queryURL ="https://api.giphy.com/v1/gifs/search?q="
@@ -37,12 +38,11 @@ $( document ).ready(function() {
   }
 }
 
-  $("#addGif").on("click", function(event){
-    event.preventDefault();
-    var gif = $("#addGif").val().trim();
-    topics.push(topics);
-
-    displayButtons();
+      $("#addGif").on("click", function(event){
+        event.preventDefault();
+        var gif = $("#add-gif").val().trim();
+        topics.push(gif);
+        displayButtons();
 
   });
 
