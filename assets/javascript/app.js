@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
 
 function displayGifs(){
-  var apiKey = "&api_key=a97091ac30ef41c28c305c9660213a24&limit=10"
+  var apiKey = "&api_key=a97091ac30ef41c28c305c9660213a24&"
   var type = $(this).attr("data-name");
   var queryURL ="https://api.giphy.com/v1/gifs/search?q="
   + type + apiKey;
@@ -20,7 +20,7 @@ function displayGifs(){
 
     for(var i = 0; i < gifs.length; i++){
 
-      $("#gifs").append('<img src="' + gifs[i].images.fixed_width.url + '" />')
+      $("#gifs").html('<img src="' + gifs[i].images.fixed_width.url + '" />')
     }
 
   })
