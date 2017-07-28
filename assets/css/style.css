@@ -1,0 +1,15 @@
+.gifRating {
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 25px;
+  color: #36A7E7;
+}
+
+h2{
+  text-align: center;
+}
+
+#buttons{
+  text-align: center;
+}

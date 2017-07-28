@@ -21,7 +21,11 @@ var type = $(this).attr("data-name");
       }).done(function(response){
         var gifs = response.data;
         for(var i = 0; i < gifs.length; i++){
-        $("#gifs").append('<img src="' + gifs[i].images.fixed_width.url + '" />')
+
+        $("#gifs").append('<div class="gifRating">' +
+          "<p> Rating: " + gifs[i].rating + "</p>" +
+          '<img style="height: 200px; width: 250px;" src="' + gifs[i].images.fixed_width.url + '" /></div>');
+        console.log(response);
     }
 
   })
