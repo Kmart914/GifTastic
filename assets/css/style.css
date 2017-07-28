@@ -3,6 +3,7 @@
   text-align: center;
   text-transform: capitalize;
   margin-top: 25px;
+  margin-left: 5px;
   color: #36A7E7;
 }
 
@@ -11,5 +12,9 @@ h2{
 }
 
 #buttons{
+  text-align: center;
+}
+
+.gifBox{
   text-align: center;
 }
